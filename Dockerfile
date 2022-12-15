@@ -6,7 +6,6 @@ RUN pip install virtualenv
 COPY . /code/
 #RUN python3 -m venv /opt/venv
 #RUN source venv/Scripts/activate
-RUN pip install Django
 RUN pip install -r requirements.txt
 RUN python manage.py makemigrations
 RUN python manage.py migrate
